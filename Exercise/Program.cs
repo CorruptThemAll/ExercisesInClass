@@ -4,6 +4,11 @@ using Exercise.Assignment1;
 Console.WriteLine("Hello, World!");
 RandomNumbers _randy = new RandomNumbers(12, 19);
 List<int> _listy = _randy.RandomValues(12, 19);
-Console.WriteLine("Yes" + _listy);
+
+foreach(var number in _listy)
+{
+    Console.WriteLine(number);
+}
+
 
 Console.WriteLine("fucking kill me");
