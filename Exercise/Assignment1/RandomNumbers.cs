@@ -28,10 +28,15 @@
                 Console.WriteLine("Illegal maxvalue" + maxValue);
                 return _list;
             }
-            
+            if(maxValue <= minValue)
+            {
+                Console.WriteLine("Max" + maxValue + "must be greater than min" + minValue);
+                return _list;
+            }
+
             for(int i = 0; i < _count; i++)
             {
-                _list.Add(_rand.Next());
+                _list.Add(_rand.Next(minValue, maxValue));
 
             }
 
