@@ -11,19 +11,39 @@
     public class StateMachine
     {
         readonly State state;
+        State _visiblestate;
+        
         public StateMachine(State initialState)
         {
             state = initialState;
-            state = State.Red;  
+            //state = State.Red;
+            for (int i = 0; i < 4; i++)
+            {
+                DoTransition();
+            }
         }
 
 
         public void DoTransition()
         {
-            switch (state)
+            _visiblestate = state;
+            switch (_visiblestate)
             { 
+                case State.Red:
+                    _visiblestate = State.YellowToGreen;
+                    break;
+                case State.YellowToGreen:
+                    _visiblestate = State.Green;
+                    break;
+                case State.Green:
+                    _visiblestate= State.YellowToRed;
+                    break;
+                case State.YellowToRed:
+                    _visiblestate = State.Red;
+                    break;
 
             }
+            Console.WriteLine(_visiblestate);
         }
     }
 }

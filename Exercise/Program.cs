@@ -14,4 +14,6 @@ foreach(var number in _listy)
 
 Console.WriteLine("fucking kill me");
 
+StateMachine _stateMachine = new StateMachine(State.Red); 
+
 Console.ReadLine();
