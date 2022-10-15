@@ -32,6 +32,7 @@
             switch (_visiblestate)
             {
                 case State.Red:
+                    Console.WriteLine(_visiblestate);
                     _visiblestate = State.YellowToGreen;
                     break;
                 case State.YellowToGreen:
