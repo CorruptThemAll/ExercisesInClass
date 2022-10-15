@@ -12,6 +12,8 @@
     {
         public StateMachine(State initialState)
         {
+            State _state = initialState;
+            _state = State.Red;
         }
 
         public void DoTransition()

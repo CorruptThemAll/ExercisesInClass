@@ -12,3 +12,5 @@ foreach(var number in _listy)
 
 
 Console.WriteLine("fucking kill me");
+
+Console.ReadLine();
