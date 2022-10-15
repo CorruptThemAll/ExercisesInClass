@@ -28,7 +28,7 @@
             for (int i = 0; i < 8; i++) //Loop til der sikre at den kommer videre til den næste case.
             {
                 DoTransition(); //Kalder på metoden
-                //state++; //Siger at den skal tilføje 1 til enum.... Var der til at fixe mit loops logik da jeg havde visiblestate = state
+                //state++; ET LEVN //Siger at den skal tilføje 1 til enum.... Var der til at fixe mit loops logik da jeg havde visiblestate = state
             }
         }
 
