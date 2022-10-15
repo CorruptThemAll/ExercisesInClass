@@ -14,7 +14,7 @@ foreach(var number in _listy)
 
 Console.WriteLine("fucking kill me");
 
-StateMachine _stateMachine = new StateMachine(State.Red);
+StateMachine _stateMachine = new StateMachine(State.Red); //Kalder på min klasse og siger at initial state er rød.
 
 
-Console.ReadLine();
+Console.ReadLine(); //er der for at console ser pæn ud.
