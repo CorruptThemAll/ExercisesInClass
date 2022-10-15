@@ -2,6 +2,12 @@
 {
     public enum State
     {
+       /* Original setup
+        * Red = 1,
+        * YellowToRed = 2,
+        * YellowToGreen = 3,
+        * Green = 4
+        */
         Red = 1,
         YellowToGreen = 2,
         Green = 3,
