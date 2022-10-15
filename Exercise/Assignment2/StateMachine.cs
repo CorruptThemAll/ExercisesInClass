@@ -16,8 +16,8 @@
 
     public class StateMachine
     {
-        private readonly State state; //min readonly state
-        private State _visiblestate; //Anden variable som kan ændres
+        private readonly State state; //min readonly variable af typen State (objekt)
+        private State _visiblestate; //Anden variable af typen State som kan ændres
 
         public StateMachine(State initialState)
         {
