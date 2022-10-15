@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Exercise.Assignment1;
+using Exercise.Assignment2;
 
 Console.WriteLine("Hello, World!");
 RandomNumbers _randy = new RandomNumbers(12, 19);

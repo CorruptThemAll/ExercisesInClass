@@ -10,14 +10,20 @@
 
     public class StateMachine
     {
+        readonly State state;
         public StateMachine(State initialState)
         {
-            State _state = initialState;
-            _state = State.Red;
+            state = initialState;
+            state = State.Red;  
         }
+
 
         public void DoTransition()
         {
+            switch (state)
+            { 
+
+            }
         }
     }
 }
